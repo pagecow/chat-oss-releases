@@ -1,1 +1,6 @@
-{ "version": "0.3.6", "releaseNotesUrl": "https://github.com/pagecow/chat-oss-releases/releases", "downloadUrl": "https://github.com/pagecow/chat-oss-releases/releases/latest", "publishedAt": "2025-01-01T00:00:00Z" }
+{
+  "version": "0.4.0",
+  "downloadUrl": "https://github.com/pagecow/chat-oss-releases/releases/latest",
+  "releaseNotesUrl": "https://github.com/pagecow/chat-oss-releases/releases/tag/v0.4.0",
+  "publishedAt": "2026-07-14T22:48:35Z"
+}
