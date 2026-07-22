@@ -1,19 +1,19 @@
 {
-  "version": "0.6.4",
-  "notes": "Download the installer for your platform below.\n\n**macOS:** download the signed + notarized `ChatOSS_x64.dmg` (or `ChatOSS.zip`) attached separately — built and uploaded from a developer machine with the Apple Developer ID certificate.\n**Windows:** ChatOSS_*_x64-setup.exe\n**Linux:** ChatOSS_*_amd64.AppImage or .deb",
-  "pub_date": "2026-07-22T12:12:19Z",
+  "version": "0.6.5",
+  "notes": "## Create app overhaul + a native \"webview\" capability\n\n**Create (Apps → Create)**\n- The left sidebar is now the **full Code sidebar** — projects with nested conversations, live per-conversation agent status, **parallel agents across conversations**, ＋-new-chat-in-project, sort / rename / remove.\n- **Resizable chat column** (drag the handle; double-click to reset to default).\n- The agent can finally **see its own work**: a new `preview_check` tool boots the app in the real sandbox and reports blank frames, console/uncaught errors, and blocked embeds. Verify is now **.aip-aware** (no more meaningless type-checks on plain HTML/JS apps).\n- The agent is taught the real platform limits (sandboxed iframe, X-Frame-Options, CORS, JS≠firewall) and reality-checks impossible requests up front.\n\n**New `webview` capability**\n- Apps declare `\"webview\"` + a `\"webviewAllowlist\"` and open real web windows via `window.chatoss.webview.open({url})`. Navigation is **firewalled to the allowlist at the OS level (Rust-enforced)** — the honest way to build a kiosk / kid-safe browser. Sites that refuse iframe embedding load fine.\n\nDocs updated for the new capability and the embedding limits.",
+  "pub_date": "2026-07-22T16:16:02Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1daSkRLOGFBSDNHSlBtQ1Q3aUdJdkxxVWZIOWQxRlkzOEk5aktubHdXajlhS0JIZmUyTnVrMjFZY0RFVG9yeWtxT21XenYrR3dBR3lQWWxHbUdwMlFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzIxMjQxCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CmlSOXpjMXJZSUNneDVEbk5kQlJZNmVNSU90L3o5MzdWczl4OFlXeFZubkpDVHpRQmZUaEQ5WGwrNnVZMkdmUGdadXViMDQ2WjZ2WnR1TW15cVdLY0J3PT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v0.6.4/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1d4RzRtbVYxSmpXc21aOU00RFR2Z2liQ3RXaXJ1MTdPN0RrUHIwcDZ1TjZFVDJIcU5ZYUR5TW1zTVQ1QXN6bTJsK1JWeERlZnZkaDJuUWJBRDdEVVFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzM1OTE4CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CmlXT1l2d25seW1NQU1Xczl4OUhXUXp0THV5R2REYUdKQitYbzh5M1ROYThVaWV6bUtSdmhTMzRHUFRJQUFzbFNXUEV6K1hxdzVyeFRzbVJ4YlhYMUFRPT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v0.6.5/ChatOSS.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1daUFNTaW1wT1B4REtXL09tZGU4L0hhQWF3dUhzM1BUb1NEdEMwaVVtakpDa0NRVVo2c2RQVEFDTjV0djlGTDczckNsSFB1SU1qbUFGOHU0V05NMFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzIyMjIwCWZpbGU6Q2hhdE9TU18wLjYuNF94NjQtc2V0dXAuZXhlCjlSbW5nbnJrOWtUOHhRS1lBOURNTE9lbVJiQi8vSGdLVVR5S09EeFE0NEZ3YUxWU3RYdTUrclA3cDNUczg3bGRmQ2FIWVUzdWc3NjltQWFOTjdhZ0RRPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v0.6.4/ChatOSS_0.6.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2RVVXRWcjlKdFlOeUJIRlN6R0JTMmRFR053UnlkUHppQ3dQMTJHbThSWGNwRUdKVFhDVG1DQXZzT0JBa0J0cDJOYU0wUlh4UWNIOWEzU2pJdm5IWFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzM2NzY5CWZpbGU6Q2hhdE9TU18wLjYuNV94NjQtc2V0dXAuZXhlCjBuMEZCL3Y5Skoxc0dqTHBLZDRFeFdLUVByRDNsSXVaZFVQbzRVcFlEeHJiazdmK2dlR2t0Q0JyTEdJVVV0UXdCZ1N5WFVmODRFRitaYlpheEh2NkR3PT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v0.6.5/ChatOSS_0.6.5_x64-setup.exe"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1VrQS94cFVsOUFvSWphYk8xejZkZEZKRXlsK0I5VitYT2xwaEVnYmp2YUhqK0ExZjAyMDIyVERZQ3lyYkI2dWtoN0Ivdi8wQXR6cUVHb3ZTREdxUlFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzIxOTk0CWZpbGU6Q2hhdE9TU18wLjYuNF9hbWQ2NC5BcHBJbWFnZQpOeEpyQ00wYUhiUVBGMktlbXhUMUlabFZNYkh5WFd3aStvVjJGNXVIaU12dk5veDRYKzRKYlI0THpvOGJsYU5HRnNMeW5GWFlPYXRUSWNYQjRmSzhCQT09Cg==",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v0.6.4/ChatOSS_0.6.4_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2RUc0RmMjhMSUh3cGw5cFVYakszU0tpSWR5cXFYSXdWWmF2YXNUcE11WkZKU0p3QWp5NDZVKzU3Tkt6cVBQbmY5dWhVTlNvVEt1L1c3WFhia3JJRWdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzM2NDUzCWZpbGU6Q2hhdE9TU18wLjYuNV9hbWQ2NC5BcHBJbWFnZQpqdy9DRWZGT1V5eFRka3lNL0ZFUGYvcFZEd1hYU2MwWVB4N1ZuRDRtSXdscmd1dW4rcWs5YTM0L3ZiUk1lcnJ1S1JaMWJvZHZQN0RTSGliWHFidjFCdz09Cg==",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v0.6.5/ChatOSS_0.6.5_amd64.AppImage"
     }
   }
 }
