@@ -1,23 +1,23 @@
 {
-  "version": "1.9.16",
+  "version": "1.9.17",
   "notes": "Download the installer for your platform below.\n\n**macOS:** download the signed + notarized universal `ChatOSS_<version>_universal.dmg` — one build that runs natively on both Apple Silicon and Intel Macs — built and uploaded from a developer machine with the Apple Developer ID certificate.\n**Windows:** ChatOSS_*_x64-setup.exe\n**Linux:** ChatOSS_*_amd64.AppImage or .deb",
-  "pub_date": "2026-08-21T12:06:42Z",
+  "pub_date": "2026-08-21T13:11:39Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2ZZTnptb3hneU0vdXJQQ3VZQlhKbW1QSlpNcEx5Nm5MZ0N3TjZCTjN2YzErSExWNmR1YUJsRXh2S2N4RDRQUnNkdTdlUGdPSGV3TVA2VDBiSW9Dc1FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzEyODIxCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CmFwQURtSW53N1ltWXZwL08yOG1seXJOVzVka2F5NWZ1UGI0Zm05dG90NHJtV1dlTzdxTlV2Z3o5anNjUElFWFNXNy9vMUI1cnpDdUpWL085Mm83VkNRPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.9.16/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1pvd3d0dzExZlNIZnFOZ3JSZVlRZHptell1aHpQTk8vNjRLbjAvTHMrMG9RUCtWQlVjVHBlWXdKYm0xbEV5NHpDZGdJcnJBUFlmNTZDNEVobGNMS2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzE3ODUyCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CjhnNG9Qek1HL3JKV0MrS3F0YmoyOWVjYW5nZDJFazZZdXQwMVloVURQWHVWMnMyaDFYdHNPcXMwNWtRVUgwK211QisyY3NuenIxdG9nL0k3a09nWERRPT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.9.17/ChatOSS.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2ZZTnptb3hneU0vdXJQQ3VZQlhKbW1QSlpNcEx5Nm5MZ0N3TjZCTjN2YzErSExWNmR1YUJsRXh2S2N4RDRQUnNkdTdlUGdPSGV3TVA2VDBiSW9Dc1FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzEyODIxCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CmFwQURtSW53N1ltWXZwL08yOG1seXJOVzVka2F5NWZ1UGI0Zm05dG90NHJtV1dlTzdxTlV2Z3o5anNjUElFWFNXNy9vMUI1cnpDdUpWL085Mm83VkNRPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.9.16/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1pvd3d0dzExZlNIZnFOZ3JSZVlRZHptell1aHpQTk8vNjRLbjAvTHMrMG9RUCtWQlVjVHBlWXdKYm0xbEV5NHpDZGdJcnJBUFlmNTZDNEVobGNMS2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzE3ODUyCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CjhnNG9Qek1HL3JKV0MrS3F0YmoyOWVjYW5nZDJFazZZdXQwMVloVURQWHVWMnMyaDFYdHNPcXMwNWtRVUgwK211QisyY3NuenIxdG9nL0k3a09nWERRPT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.9.17/ChatOSS.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1VjWUpVMThMZWNwQW1hS2VYNHVlNEJ5VkRJcE9Hd0RrRGJTMllIVmx2eXZ4dzVlU3JINm50cVJUa21sdExEQjBGS05kQWhmWUFsaG5ocURTb1lCRXdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzEzODI4CWZpbGU6Q2hhdE9TU18xLjkuMTZfeDY0LXNldHVwLmV4ZQpaVFNtZVNkWlBGOFNPQjZYV3VYMisrYm1EWWhJZGptem04T2ppZU0ybkdENVM1WGNMQWtsMFl5YmwwWHFvK096dG1ldDlrL0F5akphREd2SzIxWnhBZz09Cg==",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.9.16/ChatOSS_1.9.16_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1dkQVpQUkJEdUlZMTQweEdBRnVjN3JOZWE0ZmtZTTRwb3hldFlsWDFxOGpPcHlzVDg2SFczOW90QlE0NHlqTkIzSCt3L2pibkZtckxoL21CZ0VHbGdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzE2NTQ1CWZpbGU6Q2hhdE9TU18xLjkuMTdfeDY0LXNldHVwLmV4ZQpDUzRTZERBZ0NodXhkeVRON3JLYlRsQ2lBbjZCVytmRzVRZW1iYU5qK3dMaWRNSmgrbTBuRGF4aWVtWndxbVU0TTdROXRndW1KZ3RNQW9zRnMwUVFDQT09Cg==",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.9.17/ChatOSS_1.9.17_x64-setup.exe"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2ErZWVzY21MRUp2VFB2QXFQZ2ZicEtQTWVqVFdBVG40eitLSmt1WU5GOS8rdkZqR1RsTjJWOGVGa25mNDJmdGtSWkN4SDlIY0xia1ZQTC9od0N0alFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzEzNDkyCWZpbGU6Q2hhdE9TU18xLjkuMTZfYW1kNjQuQXBwSW1hZ2UKVnN3aVQwdlhORTJtMUtRTk1FYlBFaFE3UXk2VjdNajB2N2F0TEV1ZHpseUdRNkJoaXJkRTlGNDJKNXVtN21uKzJ5NDl0UUFZMGtiRFRTZGRQdlJoQnc9PQo=",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.9.16/ChatOSS_1.9.16_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2I0a2prN1YwZ25kbEhzV3JCTmI0VzhzdmJ3cmppSm4rUDZ0MWlwU1VtcWw3bElUT0tnc1F4ZDlGSHN2SUZjaGtud1BaYXI3Y1Fwc05PRmNZdSt2amdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MzE2MTk3CWZpbGU6Q2hhdE9TU18xLjkuMTdfYW1kNjQuQXBwSW1hZ2UKcExVYmt6L0hMeHZMMnhqUVhZZVovVmhHRmgwSEhiNGNKTXJPQzhqeiszMlIvTldpcytKVFpJd0tlUUdkazYxVkJ2ZGF0cmdLOUJqS25kL1hBd2lIQ3c9PQo=",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.9.17/ChatOSS_1.9.17_amd64.AppImage"
     }
   }
 }
