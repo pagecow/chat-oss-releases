@@ -1,23 +1,23 @@
 {
-  "version": "1.21.2",
-  "notes": "Download the installer for your platform below.\n\n**macOS:** download the signed + notarized universal `ChatOSS_<version>_universal.dmg` — one build that runs natively on both Apple Silicon and Intel Macs — built and uploaded from a developer machine with the Apple Developer ID certificate.\n**Windows:** ChatOSS_*_x64-setup.exe\n**Linux:** ChatOSS_*_amd64.AppImage or .deb",
-  "pub_date": "2026-09-09T21:47:33Z",
+  "version": "1.21.3",
+  "notes": "Download the installer for your platform below.\n\n**macOS:** download the signed + notarized universal `ChatOSS_<version>_universal.dmg` — one build that runs natively on both Apple Silicon and Intel Macs — built and uploaded from a developer machine with the Apple Developer ID certificate.\n**Windows:** ChatOSS_*_x64-setup.exe\n**Linux:** ChatOSS_*_amd64.AppImage or .deb\n\n## What's in 1.21.3\n\n- **Fix: background tasks that finished quickly no longer stall.** A background `gh run watch` whose CI run finished fast could sit \"running\" forever with no output, and the agent was never woken. Every background-task registry mutation now re-checks RUNNING rows against Rust's authoritative registry and reconciles lost completions automatically.\n- Plus everything in 1.21.2: wake/resume turns render as clearly-badged \"Background work\" continuations of the same conversation (no more phantom second conversation), and a second spawn of an identical already-running command is refused instead of racing on the same files.\n\n---\nBuilt with ChatOSS.ai",
+  "pub_date": "2026-09-10T10:41:55Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2FkOTNQQ0E3cmxEOUlGaXI2Z3lJYk9mbWZEL1JqQXpNV1RhTlBpcTJLRmkzbWdDdHJmVmkwY3FyUGQrN2dvcXp4dFFEaDYyQUV0V0VMUzk3TkVxNHdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTg5NzAyCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6ClMwTytaSm9yZW5Wa3lvczhxMUFSUkl5TGZPaFRLa2lnK2gvVlB4eUlPSEliRjE0cWRIbVVTYWIweEpwcm5wT1BTZFBMbHhtaVMxVnZxeXpSMktBekNRPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.21.2/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1owTTBxajl5bmt2aTkyV1dBRXMzTU5HbEU0ZU5USmpGTlhNU2hPbThlQ2pvWTBSRDJLcDBpQ211Y24vcmk5K3VEMURxa2FleVNMeHU0cENhL1ZlWEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTk0NzgzCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CnhpMEtxNEx0d2dFeGhLVEFHSWlWZWdVUVlyNmtwWGEzL3lwM2ppeGEvSlJocW5FSEtmSVlFUlR5cVJWV1VNVG1nMHp2ZnUrc2VIWTRUNlVTby94d0J3PT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.21.3/ChatOSS.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2FkOTNQQ0E3cmxEOUlGaXI2Z3lJYk9mbWZEL1JqQXpNV1RhTlBpcTJLRmkzbWdDdHJmVmkwY3FyUGQrN2dvcXp4dFFEaDYyQUV0V0VMUzk3TkVxNHdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTg5NzAyCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6ClMwTytaSm9yZW5Wa3lvczhxMUFSUkl5TGZPaFRLa2lnK2gvVlB4eUlPSEliRjE0cWRIbVVTYWIweEpwcm5wT1BTZFBMbHhtaVMxVnZxeXpSMktBekNRPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.21.2/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1owTTBxajl5bmt2aTkyV1dBRXMzTU5HbEU0ZU5USmpGTlhNU2hPbThlQ2pvWTBSRDJLcDBpQ211Y24vcmk5K3VEMURxa2FleVNMeHU0cENhL1ZlWEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTk0NzgzCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CnhpMEtxNEx0d2dFeGhLVEFHSWlWZWdVUVlyNmtwWGEzL3lwM2ppeGEvSlJocW5FSEtmSVlFUlR5cVJWV1VNVG1nMHp2ZnUrc2VIWTRUNlVTby94d0J3PT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.21.3/ChatOSS.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1QxTTRNc3NreHJOZHZZMEZWWmthUlFNT1dpK2I1YWM3cENPZFRiM3RNZGRVaEtrcW90TmJNcVhpbm9IYWRPejBEU3R6b0REVmlpeGM2R1ZqQXFsWEF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTkwMjgyCWZpbGU6Q2hhdE9TU18xLjIxLjJfeDY0LXNldHVwLmV4ZQp1MEwwQlllSHJBR3JQcjZWSGQ2REt6cnFkTjJEd1lER3JITGltVWVjalBLK0VlWFpzK1hXY3FsdDhEbEtzNGRveHJJMTJ3OG12N0JwWkg3aWxtRmJEQT09Cg==",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.21.2/ChatOSS_1.21.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1lQRmd3OThYOWZFM1IwNHMvOEYyTXJDWEJ0TjE5dCtYZlR0SUE4WW1YYmd1TDhQb09BNVdJMHBhMXNsZ2FUMkprT1J3N1FmdXAraTYxSElPRmtBVUFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTk1OTg1CWZpbGU6Q2hhdE9TU18xLjIxLjNfeDY0LXNldHVwLmV4ZQpFb1RDOEk2ZXVDU1RNbkF5aG5CRnBONHhNdE00UkprVFI4bVNKRFR3czk0RThQcTB3QzR0ZTF5US9SYmFsUHNtOVJPTkVqL2cyNVFZTW5XRGFGMC9EZz09Cg==",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.21.3/ChatOSS_1.21.3_x64-setup.exe"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2JyM1lENkRhVncxUWJ4eGpCZCs3Rmx0TjJDbUFCeGJnZVpkTW13eCtvTnc2T1pWMlNCa2tFNFRBQzVPUnYvT1JheDJMeGNRTytZelpFU0JaQVdMdFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTg5ODU1CWZpbGU6Q2hhdE9TU18xLjIxLjJfYW1kNjQuQXBwSW1hZ2UKMTJaQVY1QlJzWVpyRzYwT0d5N0FYUXdmc2U3U2d0WlAzbEhKeTlqS2cyQWNSSUZ1anZoVjRjMnVyRTMxcWNnRmVCRS9Rd2dGbW5ZejBNMWlJZm13Qnc9PQo=",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.21.2/ChatOSS_1.21.2_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1pBbTR2NFgySkFlSTYyR1hDOE5KNXEwVXV0Vmp3QmRadFBZbHhiMmE1VTVEVDh0N01vYVhCTHNpTXBFODhpaWo5WEhHMGthQjVkQ2pxR0ZJbEFuS0FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTk1NTE3CWZpbGU6Q2hhdE9TU18xLjIxLjNfYW1kNjQuQXBwSW1hZ2UKbTYzN0tSZ28yY3FlY1ArOWJwazY3cGVEdTZiQnpiZmpkYm83THpHVTR2OERVNVNCb0VZVFY3VUpiWmVXWlFUaWFEaXJOVGZCODR1dWptdkRTZk9yQUE9PQo=",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.21.3/ChatOSS_1.21.3_amd64.AppImage"
     }
   }
 }
