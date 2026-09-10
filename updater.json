@@ -1,23 +1,6 @@
 {
   "version": "1.22.0",
-  "notes": "## What's new\n\n**Launch mode**\n- Terminal text size controls: A− / A+ icons to the left of the full-screen button grow or shrink each terminal's text (per-terminal, persisted, 8–30px).\n- Direct CLI agent terminals no longer claim the Launch agent's AI model in the header — the model is shown only when actually known, otherwise omitted.\n\n**Connect**\n- Resend is now a built-in featured MCP connector alongside GitHub, Stripe, Vercel, and Supabase (hosted endpoint, Resend API key).\n\n**Engine fixes (from the 2026-09-10 session)**\n- Auto-merge now covers every finished sub-agent with a worktree on disk, even if it dropped out of the pending list — uncommitted worktree work can no longer be silently lost.\n- The sub-agent finished signal is delivered as a hidden follow-up, never as a user-visible queued message.\n- The orchestrator now replies to check_subagent / list_subagents / view_subagent_conversation results before parking on its sub-agents (no more silent turn ends).\n- The background-task stall watcher no longer kills healthy-but-silent commands (e.g. builds piped through tail) — it checks the child's CPU time before killing, and the stalled status is now reported accurately.\n- Sub-agents running over 20 minutes get one engine-sent time-box nudge to converge and wrap up.\n\n**Also**\n- Restored the Launch terminal fit() sane-size guard (mid-animation fits no longer reflow the PTY to a few columns).\n\nBuilt with ChatOSS.ai",
-  "pub_date": "2026-09-10T14:57:47Z",
-  "platforms": {
-    "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1ZCS1JwVytjVHVISUN0VUgxVkZxbkRLQS9HOFhJalFleEdWQ0dUNU1yV0pLMHl0c0c3QWlzVjhGanplMDdiYWt6RGhpMmV6bFFPa0F6ZzVqNHVwb3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MDUwNzg1CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6ClhZS3gxY2lZVkRjSXdFY0RxNnJkM3BIL1VOdFZuZTc2ZzJ2ZjA0cmgrNW1tNU5ZM2x0RjVTQ2dQRmJJdW9LVEZndDJITFFIMDFhRjZwbmV0aWxCb0JRPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.22.0/ChatOSS.app.tar.gz"
-    },
-    "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1ZCS1JwVytjVHVISUN0VUgxVkZxbkRLQS9HOFhJalFleEdWQ0dUNU1yV0pLMHl0c0c3QWlzVjhGanplMDdiYWt6RGhpMmV6bFFPa0F6ZzVqNHVwb3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MDUwNzg1CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6ClhZS3gxY2lZVkRjSXdFY0RxNnJkM3BIL1VOdFZuZTc2ZzJ2ZjA0cmgrNW1tNU5ZM2x0RjVTQ2dQRmJJdW9LVEZndDJITFFIMDFhRjZwbmV0aWxCb0JRPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.22.0/ChatOSS.app.tar.gz"
-    },
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1I3ekJhcnFsZ3VqSUVHMHdhdHliSHU0MEpHZ0VISzQ1SDZpZ2tJTHdhcmMxL0ZRdENIZk93QnFxWDJpKzF5K0Nxam9INlYvak14ZWY0UUhqM3pIcndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MDUyMDc5CWZpbGU6Q2hhdE9TU18xLjIyLjBfeDY0LXNldHVwLmV4ZQoxbGxhOFRRNEtZL2s2cWk0Y1h3aUFrMnF4ejZzV0xYWmNISFJobzNzMThpdnZwMDN2ZVBGZEdUcGJjNEcvRFk1T2l3V3hzdmVRTzJqa2tKRWQzbXRDQT09Cg==",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.22.0/ChatOSS_1.22.0_x64-setup.exe"
-    },
-    "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1p4NStiT0R0ZDR2UjdBLzAyN0UvekdoSmxqTTZZSW1kdGFKK2pkUzJZa3JyZGhFZzVwTnNrZWxwakdnQ0VNa0MyaE92NmFuRUwxNWtGYWR5Tkp1VWdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MDUxNjg3CWZpbGU6Q2hhdE9TU18xLjIyLjBfYW1kNjQuQXBwSW1hZ2UKbWhUQkJSNWJRaWwyaEFxVkxKQ0V2aFdzZVQyS3FNamxqZXBKUHJlamkvbEx4TUpSd0kyZSt3bm5SVDBESDVkTmdlVUJyaUhkRkVGR2Y4R3RtbXI0Qmc9PQo=",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.22.0/ChatOSS_1.22.0_amd64.AppImage"
-    }
-  }
+  "notes": "Release v1.22.0",
+  "pub_date": "2026-09-10T15:01:42Z",
+  "platforms": {}
 }
