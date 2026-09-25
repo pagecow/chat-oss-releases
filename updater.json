@@ -1,23 +1,23 @@
 {
-  "version": "1.28.5",
-  "notes": "**Agents no longer save cut-off copies of what they write.**\n\n- **Fixed:** to save space in long conversations, ChatOSS shortens an agent's older tool calls. Some models, such as GLM 5.2 and DeepSeek V4.1 Flash, copied that shortened form into their new work. They cut off files, edits, memory notes, commands and Kanban cards partway through, ending them with `…[elided stale content]`, and ChatOSS saved them that way. Older calls are now shortened in a way that can't be mistaken for real text. Any tool call that ends with a shortening marker is refused, and the agent is asked to send the full text instead, so nothing cut off is saved.\n- **Check recent work:** anything an agent saved before this update may still be cut off. Search your projects for `[elided stale content]`, and look over recently edited Kanban cards and comments.\n\nThis applies to every ChatOSS app with an AI agent: Code, Create, Orchestrate, Kanban, Models and Connect.\n",
-  "pub_date": "2026-09-24T19:19:28Z",
+  "version": "1.28.6",
+  "notes": "Download the installer for your platform below.\n\n**macOS:** download the signed + notarized universal `ChatOSS_<version>_universal.dmg` — one build that runs natively on both Apple Silicon and Intel Macs — built and uploaded from a developer machine with the Apple Developer ID certificate.\n**Windows:** ChatOSS_*_x64-setup.exe\n**Linux:** ChatOSS_*_amd64.AppImage or .deb",
+  "pub_date": "2026-09-25T21:24:40Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1VxdXhvSTdDeE9ZdTF3VnU1aXp5cXZhZ09OREdBTWZlSTlqdzJDZWE2aDFSeFpFWkt5SmVvbzNCZ2xPclRqSlJRcld4cXJBbFcyUmk5a1lpY2dvbUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjc2MzI1CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CXZlcnNpb246MS4yOC41CjVIK2FiU3ZmQlZ3eUoveWFYNWt3NCtTbU5vcktOdVFOKzVEckhTWlpZa3B0UkJ6SWkwQkZreklBUlFCU0xJTmdwblZVOGRqZ2s3VnhBbTM0Q0t4MkNnPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.28.5/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1VkQURLeFdtYnpGVFdhNUZjYWI3VjBtR0FWZXZZQ00zdjV2eGN5NUhrMXFUWVMxM053Vks3bk1tQmRzYk0rZ1RueS84Vm1mRE5XUmN4MC9YNEwyT2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzY5NjQ3CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CXZlcnNpb246MS4yOC42Cis1RkdBMHduZlN0VU54aDF5OVBSVXZKTlpBWGRCSEFUZ3F4NG1vRXM5Ry92dEZLM0l2SUVVbVV1V0NOWGtoR2M4a1R3VHVUMFF2ZkV2VTRFNi9CeUJ3PT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.28.6/ChatOSS.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1VxdXhvSTdDeE9ZdTF3VnU1aXp5cXZhZ09OREdBTWZlSTlqdzJDZWE2aDFSeFpFWkt5SmVvbzNCZ2xPclRqSlJRcld4cXJBbFcyUmk5a1lpY2dvbUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjc2MzI1CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CXZlcnNpb246MS4yOC41CjVIK2FiU3ZmQlZ3eUoveWFYNWt3NCtTbU5vcktOdVFOKzVEckhTWlpZa3B0UkJ6SWkwQkZreklBUlFCU0xJTmdwblZVOGRqZ2s3VnhBbTM0Q0t4MkNnPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.28.5/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1VkQURLeFdtYnpGVFdhNUZjYWI3VjBtR0FWZXZZQ00zdjV2eGN5NUhrMXFUWVMxM053Vks3bk1tQmRzYk0rZ1RueS84Vm1mRE5XUmN4MC9YNEwyT2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzY5NjQ3CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CXZlcnNpb246MS4yOC42Cis1RkdBMHduZlN0VU54aDF5OVBSVXZKTlpBWGRCSEFUZ3F4NG1vRXM5Ry92dEZLM0l2SUVVbVV1V0NOWGtoR2M4a1R3VHVUMFF2ZkV2VTRFNi9CeUJ3PT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.28.6/ChatOSS.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1RkYWpuVFFYNDYzQk5VWEV2UVFzRkhoMW1kQ0paRW90SGQrZGM2NEUwajdkYnY2UTQxSEcyVThHa3cvbUl4RU5HakdyZ0p0UWdRQnFIemQ1dXYwN0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjc3Mzg5CWZpbGU6Q2hhdE9TU18xLjI4LjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMjguNQp2LzJNbVZ1dWxVQnhLREJxTlBueVlpeC9aSlpMSzB1TUx0UklObTJhSUxObEsvRk9uUDlSTmhMVnBiQU5LY1B0RFV5TW9Bck1nN2pnbDhQaEc0OHRCUT09Cg==",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.28.5/ChatOSS_1.28.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1Z6UWwyczhDSjd5VHdmRU5hQ3ZuVjhZK3JDT1NGTEExYWdvM1hIVnRuWjdEY0huUWhJb1lJQmhhdUJMQjZudEw5ekx0VWRBR0I5UTNobGNSL2JCRGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzcxMzIwCWZpbGU6Q2hhdE9TU18xLjI4LjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMjguNgplZE0xd2N6bzdSd2UrWHhhdnZUbW0rRFhIVnhPMTZjeWhKQzRuUXVDRy9aZW9VeDlyV3pHdVBQWElieFFwN1NGNng3eHZKYlA5eEw0SjFGYkp2MVZCdz09Cg==",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.28.6/ChatOSS_1.28.6_x64-setup.exe"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1RrclJCZWhvdHMrVkNwdmhCYk1vSDNBczR4Q01vN3kydGM2ZEQ2MWdKSzYxWmRRenV3aE4xV1paMWtHU3FONzB2akpBaWlIenZxLzlLOUFnaGRVa2drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjc2OTA4CWZpbGU6Q2hhdE9TU18xLjI4LjVfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjI4LjUKNjZaNEgxb1QrejcrajlUdWpQTW1Dd0VlWTVHZzBSdUxMYXpsbHU4dm9PdWlLc09UL0x4N0o1dHp3U01EekZqRTFOVml6TEdMQVozdGZlVjUwYW9hQXc9PQo=",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.28.5/ChatOSS_1.28.5_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1QwT2xlU3g1ZURhQzFMUFpSS0ZSaWc3dzNxaXBGQ1hYc2Fac0Z3NW4wOGtXU0tpRGRRSVFiblo0a0h6L1NKcVlTWTJVTExLRnlITDZJMTQzTUdSbHdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzcwNTg2CWZpbGU6Q2hhdE9TU18xLjI4LjZfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjI4LjYKVUZyeEticzZuZlMxVHF6akFDdEFpNGxPK1VoNkFTcTB6aThic3NBcW1YbE5ralpGdXZQRDhobWZLUytGUHNoMDZZQ1B2UkF1VHF5cDVPaVNOK0JFQkE9PQo=",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.28.6/ChatOSS_1.28.6_amd64.AppImage"
     }
   }
 }
