@@ -1,23 +1,23 @@
 {
-  "version": "1.31.3",
-  "notes": "Download the installer for your platform below.\n\n**macOS:** download the signed + notarized universal `ChatOSS_<version>_universal.dmg` — one build that runs natively on both Apple Silicon and Intel Macs — built and uploaded from a developer machine with the Apple Developer ID certificate.\n**Windows:** ChatOSS_*_x64-setup.exe\n**Linux:** ChatOSS_*_amd64.AppImage or .deb",
-  "pub_date": "2026-10-29T16:33:58Z",
+  "version": "1.31.4",
+  "notes": "Download the installer for your platform below.\n\n**macOS:** download the signed + notarized universal `ChatOSS_<version>_universal.dmg` — one build that runs natively on both Apple Silicon and Intel Macs — built and uploaded from a developer machine with the Apple Developer ID certificate.\n**Windows:** ChatOSS_*_x64-setup.exe\n**Linux:** ChatOSS_*_amd64.AppImage or .deb\n\n\n## What is new in v1.31.4\n\n- **Compact now works on one giant message.** Paste a huge block of text (hundreds of thousands of tokens) and \"Compact\" / `/compact` used to say the chat was \"too short\". A single message over 200k tokens can now be summarized on its own — even when it is the newest message — so you can carry on chatting without that paste being replayed in full on every turn. The full transcript is untouched, and Stop now cancels a summarization that is in progress.\n- **Typing no longer pushes the reply behind the input.** With a tall input and the conversation scrolled to the bottom, typing used to slide the end of the reply under the input and flash the scroll-to-bottom button. The reply now stays put as the input grows, shrinks or fills up — in Chat, Kanban, Code, Models and Connect.\n- **Attached images enlarge everywhere.** Click an attached image in the Chat or Kanban input (and in the edit-message box) to view it full screen, just like Code. Closing the full-screen view no longer discards a message you were editing.\n- **Kanban's input opens one row tall.** It could open at full height with nothing typed, after the chat column had been collapsed. It now always starts small and re-fits when the pane is resized.\n",
+  "pub_date": "2026-11-14T00:16:58Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1RhdDVBTW80VXE3NnVOTFM2VW1TQmc1cVY5TTFHWmRKVmR3NFVsdTMyK0hoYm9QMEI0dnkyWFRuQTlGVmpqZDRHZitOcTFBc3NQMlBXMWd2blkzVEFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjkwODkxCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6Cit1ZWpxVXBlUTR6UWovc011MWtVKy90QzYwVlhxSkpSeWpFVVMzeHhLaDMxc1BZWGpzak9SejlqYjEyZDVWb204eXFFQlpEVW5NcnkrL3YxQWdJQ0JnPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.3/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1E4VTNRS013L1MrcnZ0UkkrNFNpQzNRTG81T0tObE1yeHNGMnlGRk9VbnFDeTBMNU96aEczSU4rQ0JMVkl1WTVMT0xwMkE3a2s5MnA0UHFzSWl5TEEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjE0Nzg4CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CnZmOHh5cXBmNjdEWkdiTlZzTXpWb2wyM21oRjM0S2dMeTVlOEFNdHUyYjZUOEljek1uV1lUNEM2NVpxN3VQNkhWZGJkN08zeUlCaFdHRVM5QkVia0JBPT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.4/ChatOSS.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1RhdDVBTW80VXE3NnVOTFM2VW1TQmc1cVY5TTFHWmRKVmR3NFVsdTMyK0hoYm9QMEI0dnkyWFRuQTlGVmpqZDRHZitOcTFBc3NQMlBXMWd2blkzVEFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjkwODkxCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6Cit1ZWpxVXBlUTR6UWovc011MWtVKy90QzYwVlhxSkpSeWpFVVMzeHhLaDMxc1BZWGpzak9SejlqYjEyZDVWb204eXFFQlpEVW5NcnkrL3YxQWdJQ0JnPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.3/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1E4VTNRS013L1MrcnZ0UkkrNFNpQzNRTG81T0tObE1yeHNGMnlGRk9VbnFDeTBMNU96aEczSU4rQ0JMVkl1WTVMT0xwMkE3a2s5MnA0UHFzSWl5TEEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjE0Nzg4CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CnZmOHh5cXBmNjdEWkdiTlZzTXpWb2wyM21oRjM0S2dMeTVlOEFNdHUyYjZUOEljek1uV1lUNEM2NVpxN3VQNkhWZGJkN08zeUlCaFdHRVM5QkVia0JBPT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.4/ChatOSS.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1VMNVdmMUdadXJ4d2MwckFrVWFpTFl2Q1ZPWk5BeVNXbHViamprQWNKeTJXV3RYME9DbmtCWm1LaUNHTzVnQ3hna2dsZUh0dWFtT1dnSWdmODBKb2drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjkxNDY3CWZpbGU6Q2hhdE9TU18xLjMxLjNfeDY0LXNldHVwLmV4ZQpGN1lCZWZneVpDcmZ0L2gyQmI0RWJxbmFwd2U1aDhYck45UzY0di80OU9Sek0rY0FNeWxVbUVLdEh6ejNaMHlETjd2ZkM5YWNabUxUN2tZaFcxbVNEUT09Cg==",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.3/ChatOSS_1.31.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1d2UnpGVUgvU05qRE9ubHlpMk9NbFFmY3d3eEp1WnFoTkZQYTBXeW8wRUdGY0R1cktrRitqc2NUWTluT2VZZlRFK214QXVxNHVsM0NRUVVzRDl0T2dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjE1Mjk5CWZpbGU6Q2hhdE9TU18xLjMxLjRfeDY0LXNldHVwLmV4ZQpXbW9YS3JTa3BUbkh1OVFJcms5dFVZSmdnQzErQzR1YUFvNUs3K2I3ZnhFSDdteWJMbUVnWWFVVXRjaFlyeUQ4b2xXMlcwUjMxM0IyemZQSFZBY05Bdz09Cg==",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.4/ChatOSS_1.31.4_x64-setup.exe"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2E1aE42M3ZTeXdFRmtKbW9SVld2T051Q2xWNnhFWCszNWhuMUhacWg3RHh6ZVBzZnhkbEp1RWN4aVhJdTVpTXV5eDMxUEp0QXE1dk5aOE04WmdlQkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjkxMjcyCWZpbGU6Q2hhdE9TU18xLjMxLjNfYW1kNjQuQXBwSW1hZ2UKSTZFamRUZjJtczJva01PVThDN1o2ZHEyM20weWZFVkdFMk1YT3pTeTNxWEZTRlBrRk1nT0ZRcnRVM0x2RzlDQnY4eE44ZXBnNFFSMHh2b0tqaWRCRGc9PQo=",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.3/ChatOSS_1.31.3_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2VwTk1aQ3R3UmN0dmRHajlHMnJXTE9QNUsrWkVNNzQ5RFQxU3dUSGpqQ1JqaUNYSEFXQTdxcndmc2EraVdtVVFKbi9ieG5uVkg4WEd3cUxxdW56SndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjE1MjIzCWZpbGU6Q2hhdE9TU18xLjMxLjRfYW1kNjQuQXBwSW1hZ2UKeGpFRlZWNk5zOFNwMmFERjg5a2Vsblo3YXRQZGxlR1N6dFAzM2RxdDRZR0hXSnN1aXFMcFhlMkYzZTU2YXNOVm9CZXZxR2JQYWJXaFNEOHBaYTRPQ2c9PQo=",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.4/ChatOSS_1.31.4_amd64.AppImage"
     }
   }
 }
