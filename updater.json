@@ -1,23 +1,23 @@
 {
-  "version": "1.31.5",
-  "notes": "Download the installer for your platform below.\n\n**macOS:** download the signed + notarized universal `ChatOSS_<version>_universal.dmg` — one build that runs natively on both Apple Silicon and Intel Macs — built and uploaded from a developer machine with the Apple Developer ID certificate.\n**Windows:** ChatOSS_*_x64-setup.exe\n**Linux:** ChatOSS_*_amd64.AppImage or .deb\n\n\n## What is new in v1.31.5\n\n- **Signing in works again — and it stays signed in.** Supabase disabled this app's old public \"anon\" API key on 2026-11-17 (one-way, it cannot be re-enabled). Every installed copy authenticated with it, so sign-in, sign-up and browser (PKCE) sign-in failed with `401 Legacy API keys are disabled`, and anyone already signed in was dropped back to the login screen at the 1-hour token boundary when the automatic refresh was rejected. v1.31.5 ships the project's new publishable client key, so sign-in, sign-up, PKCE sign-in and the hourly token refresh all work again. If you were bounced to login, update and sign in once — the session then survives restarts.\n",
-  "pub_date": "2026-11-17T19:43:17Z",
+  "version": "1.31.6",
+  "notes": "Download the installer for your platform below.\n\n**macOS:** download the signed + notarized universal `ChatOSS_<version>_universal.dmg` — one build that runs natively on both Apple Silicon and Intel Macs — built and uploaded from a developer machine with the Apple Developer ID certificate.\n**Windows:** ChatOSS_*_x64-setup.exe\n**Linux:** ChatOSS_*_amd64.AppImage or .deb",
+  "pub_date": "2026-11-18T19:57:22Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1VMSnRXSXc4SGtEMmlDTGtnSUJUcWpHSjdXSmxGeWxxU1M0NU91NUhxVmhGL29EQTJ1N1EwNlRxT3pjYW90MFBBd2w4VGZUTUtMQTNkZ2dmUmFZL2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTQyMTMxCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CjRoMnMxeFdUd3FVaXQwZS9HbjE0dzdTejIyZ1ArWjUrU3JZdmZpTFBSRnF1M0d3aUQxQUlZWVJqSFpjQTdJVHpXeHJkWGFaVHlhYWlMbkRBWTh3bUJBPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.5/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1RQMEpLTUZxc2pMSW5oT1RoN3JoNy9QZ29wczEwMXpPTklZRStFWkY4YUlvZ3JEZUlGTnM0eEkwNFplb0ZnbCtCNkdNMndQVEtjMFgwUHFUV3ZwQkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDMwMjE1CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CnRvcThUOHBzUjJDbXppdjYyMmo3dUNmUXJRTkdJV1NBazdSamxKK0pFQWpqR2tOeEhlTjM5NW9BWFBXd3pINkdSN1V4dGhkZkZEVHNnQ1IxY0tqa0R3PT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.6/ChatOSS.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1VMSnRXSXc4SGtEMmlDTGtnSUJUcWpHSjdXSmxGeWxxU1M0NU91NUhxVmhGL29EQTJ1N1EwNlRxT3pjYW90MFBBd2w4VGZUTUtMQTNkZ2dmUmFZL2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTQyMTMxCWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CjRoMnMxeFdUd3FVaXQwZS9HbjE0dzdTejIyZ1ArWjUrU3JZdmZpTFBSRnF1M0d3aUQxQUlZWVJqSFpjQTdJVHpXeHJkWGFaVHlhYWlMbkRBWTh3bUJBPT0K",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.5/ChatOSS.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1RQMEpLTUZxc2pMSW5oT1RoN3JoNy9QZ29wczEwMXpPTklZRStFWkY4YUlvZ3JEZUlGTnM0eEkwNFplb0ZnbCtCNkdNMndQVEtjMFgwUHFUV3ZwQkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDMwMjE1CWZpbGU6Q2hhdE9TUy5hcHAudGFyLmd6CnRvcThUOHBzUjJDbXppdjYyMmo3dUNmUXJRTkdJV1NBazdSamxKK0pFQWpqR2tOeEhlTjM5NW9BWFBXd3pINkdSN1V4dGhkZkZEVHNnQ1IxY0tqa0R3PT0K",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.6/ChatOSS.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2JsemF2MG1Ec0owSkp1ZmFhU0d5aUxqVDNTMWpPbzB6UytaWGtmWHg1VWczZFVEbVIwM2pxT1k5RlYzT3k5UjBjcUpjNEN5QVRpZUxHUUhKU0t2dndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTQzNDY0CWZpbGU6Q2hhdE9TU18xLjMxLjVfeDY0LXNldHVwLmV4ZQpudlhSMkVTTFRKRU5mdWZHTWJqSGNIclFFRG9JU2VSYzlUbytuV0Z0MThpMkRpWUIxSVU1bnV2azBlbmxsYVVyajJSZFJoTDhSaGQzNGRTRDc1eVJBUT09Cg==",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.5/ChatOSS_1.31.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1lyN3hvZVg4RFNhdlowRDJPUnJMQUF3dEZxZExGWk9iNmsrSmZNSmxuQU93c1kzekNDd2phblV5aFJRV3dZMzgxdWVPeFBGMlNyNEQ5aEZWYVFkK2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDMxNzM1CWZpbGU6Q2hhdE9TU18xLjMxLjZfeDY0LXNldHVwLmV4ZQpSWFU0RWx1bFlDRWpuTjFlQUxXWEpUM2ZaRlRFMHFxbGJyL25EM0JseVd1NU56aWJtOUdOT2VlR0c1ODVmQnNTQUMrQWROclZsUnBVTWhmeDFxVjNCdz09Cg==",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.6/ChatOSS_1.31.6_x64-setup.exe"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T2U1K1VPY3BWb0RoQzIxMFFST3JabnF1b0xJWmhCOW1MVTBGTmxPSjROcUZkNHlqUjNEZUFXTGp5QzJQajBqQVlybysrTkdua3ZxNlJWUnlRcW9zZEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTQzMzcwCWZpbGU6Q2hhdE9TU18xLjMxLjVfYW1kNjQuQXBwSW1hZ2UKMkEwa0ZFbTZaQWdRenVxSzZkeDEwQmc4QTlWYmhoQmRsMHoxVVZiMnlWRGx5Q3N0M3BFTU9RYUlNVE9WYk03YWViOG5xZFR6RXRxQWRGY3RLYjRYQXc9PQo=",
-      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.5/ChatOSS_1.31.5_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSC9rOFJOVXE4T1hsQStkY3V3MWJNT3h4QjJ1eU1hdk0vdjlXSGRtOXNrMDJDbmZPSUQzeWg5Yjd6ZEhHUXA2OGZJSlhnQS9PcjFPZlFCTnViNVErKzdzZkV4UGhJaWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDMxMTczCWZpbGU6Q2hhdE9TU18xLjMxLjZfYW1kNjQuQXBwSW1hZ2UKNGs4dDBLODhWK1FaMW96blRCUjBwY1NlZ1JlOWJ0blZpQlAzd29SMkdTR1M1NFN3SWxFT25LbUhpT3FKY0QrdndrUXpjdTJpa29xZk5YbmlIWldlQVE9PQo=",
+      "url": "https://github.com/pagecow/chat-oss-releases/releases/download/v1.31.6/ChatOSS_1.31.6_amd64.AppImage"
     }
   }
 }
